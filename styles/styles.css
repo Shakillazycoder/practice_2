@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  /* background: #FFF; */
+}
+.btn-primary {
+  border-radius: 41px;
+  background: #e02c6d;
+  display: inline-flex;
+  padding: 5px 20px;
+  align-items: flex-start;
+  gap: 8px;
+  border: none;
+  color: #fff;
+  align-items: center;
+}
+hr {
+  width: 1110px;
+  height: 1px;
+  flex-shrink: 0;
+  fill: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  margin: 40px 165px;
+}
+
+/* header related style */
+.header {
+  background: #fff;
+  padding: 60px 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-title {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+/* banner related style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  align-items: center;
+}
+.banner-title {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.banner-description {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-bottom: 16px;
+  max-width: 500px;
+}
+.banner-image {
+  /* width: 100%; */
+  object-fit: cover;
+  background: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+/* sponser related style */
+.sponser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sponser img {
+  padding-left: 50px;
+}
+/* card item related styles */
+.card-title {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 0px 200px; */
+  margin: 20px 165px;
+  gap: 20px;
+}
+.card-item {
+  color: #18191f;
+  font-feature-settings: "liga" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 329px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 20px;
+}
+.card-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+/* footer related styles */
+footer {
+  background: #0a0826;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-title {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-description{
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-weight: 700;
+}
+.footer-icons{
+    margin-top: 26px;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .header,
+  .banner {
+    padding: 0px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-title,
+  .banner-description {
+    text-align: center;
+  }
+  .button,
+  .btn-primary {
+    margin-left: 140px;
+  }
+  .banner-image img {
+    width: 202px;
+    height: 190px;
+  }
+  .banner-image {
+    background: none;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .sponser {
+    flex-wrap: wrap;
+  }
+  .sponser img {
+    padding-left: 0;
+  }
+  hr {
+    width: auto;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px;
+    padding: 15px;
+  }
+  .card-item {
+    width: 350px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .header,
+  .banner {
+    padding: 50px;
+  }
+  hr {
+    width: auto;
+  }
+  .sponser img {
+    padding-left: 0;
+  }
+  .container {
+    margin: 0px;
+    padding: 15px;
+  }
+  .card-item {
+    width: 245px;
+    max-width: none;
+  }
+}
